@@ -1,0 +1,290 @@
+::-webkit-scrollbar{
+    display: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#f7ecd9;
+    width:100vw;
+}
+#Intro-part{
+    width:100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    margin-bottom:12vh;
+}
+#Intro-part .left{
+    width: 50%;
+    height:150vh;
+    background-image:url(bg1.jpg);
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background-position: center;
+    border-radius:10px 0px 0px 10px;
+}
+#Intro-part .left img{
+    width: 35%;
+    margin-bottom:20px;
+    filter:drop-shadow( 0px 0px 10px  rgb(109, 108, 108));
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;   
+}
+#Intro-part .left img:hover{
+    scale: 1.02;
+}
+#Intro-part .left h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:1.2rem;
+    margin:6px;
+}
+#Intro-part .left h4{
+     color: gray;
+     margin:10px;
+}
+#Intro-part .left p{
+    text-align: center;
+    font-size:0.7rem;
+     width:80%;
+}
+#Intro-part .right{
+    width: 50%;
+    height:150vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+    background-color:transparent;
+    padding:20px;
+    justify-content:space-around;
+}
+#Intro-part .right .top{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 10px;
+}
+#Intro-part .right .top img{
+    width:150px;
+    border-radius: 10px;
+    margin: 10px;
+}
+#Intro-part .right  h4{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+#Intro-part .right  p{
+    color:gray;
+    font-size: 0.8rem;
+    width: 100%;
+}
+#Intro-part .right .context{
+    text-align: left;
+    box-shadow: 0px 0px 20px 2px gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+#Intro-part .right .bottom{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+#Intro-part .right .bottom img{
+    width:100%;
+}
+#EntryInPolitics{
+    width:100%;
+    height:120vh;
+    padding-left:30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom:10vh;
+    background-image: url(lotusphoto.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position:left;
+}
+.linebarSection{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.linebarSection h2{
+    text-wrap: nowrap;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.linebarSection .linebar{
+    width: 5px;
+    height:120vh;
+    background-color: gray;
+}
+.PoliticalContentSection{
+   width: 60%;
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content:space-around;
+
+}
+.PoliticalContentSection h4{
+    margin-bottom:10px;
+}
+.PoliticalContentSection p{
+    color: gray;
+    font-size: 0.9rem;
+}
+.PoliticalContentSection .journey{
+    margin:20px;
+}
+#Achivements{
+    width: 100%;
+    height:240vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(photo5.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    align-items: flex-end;
+    filter: drop-shadow(0px 0px 10px grey);
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+.AchievementsHeader{
+    width: 50%;
+    height:10%;
+}
+.AchievementsHeader h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+.Achivementscontent{
+    width:50%;
+    height:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+}
+.AchivBox{
+    margin: 10px;
+}
+.AchivBox h4{
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+.AchivBox p{
+    font-size:0.8rem;
+    color: gray;
+    box-shadow: 0px 0px 10px gray;
+    text-align: left;
+    border-radius: 10px;
+    padding: 10px;
+}
+#footer{
+    margin:20vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#footer p{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1rem;
+}
+#footer .name{
+    color:gray;
+}
+@media(max-width:400px){
+    #Intro-part{
+        display: flex;
+        flex-direction: column;
+        padding:0;
+    }
+    #Intro-part .left{
+        width: 100%; 
+        height: 100vh;
+    }
+    #Intro-part .left img{
+      width:60%;
+    }
+    #Intro-part .right{
+        width: 100%; 
+        height: 100vh;
+    }
+    .linebarSection h2{
+        text-wrap: nowrap;
+        font-size: 0.9rem;
+        font-weight: 800;
+    }
+    .PoliticalContentSection{
+        width:90%;
+        padding:10px;
+     }
+     .AchivBox p{
+        width:200px;
+    }
+    #EntryInPolitics{
+       background-size: 50px;
+    }
+    
+}
+@media(max-width:600px){
+    #Intro-part{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    #Intro-part .left{
+        width: 100%; 
+        height: 100vh;
+    }
+    #Intro-part .left img{
+      width:50%;
+    }
+    #Intro-part .right{
+        width: 100%; 
+        height: 100vh;
+    }
+    .linebarSection h2{
+        text-wrap: nowrap;
+        font-size: 0.9rem;
+        font-weight: 800;
+    }
+    .PoliticalContentSection{
+        width:90%;
+        padding:10px;
+     }
+     #Achivements{
+        height:150vh;
+        background-position:left;
+        align-items:flex-start;
+     }
+     #Achivements{
+        height: 150vh;
+     }
+     .AchievementsHeader h2{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size:1.2rem;
+    } 
+    #EntryInPolitics{
+        background-size:50px;
+     } 
+     #footer p{
+        width: 40vh;
+     }
+}
